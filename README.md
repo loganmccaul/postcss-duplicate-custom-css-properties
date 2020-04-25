@@ -9,7 +9,7 @@ const duplicateProps = require('postcss-duplicate-property')
 
 module.exports = {
   plugins: [
-    +duplicateProps({
+    duplicateProps({
       values: ['$text-color'],
       duplicate: value => `$custom-property-${value.slice(1)}`
     })
